@@ -11,12 +11,12 @@ no permission=0 read=4 write=2 execute=1
 rw= 4+2 =6
 wx=2+1 =3
 rwx=4+2+1 =7
-![display of linux num represention](image/edit.png)
+![display of linux num represention](images/edit.png)
 
 ##shorthand representation of permision
 To explore this take this example; create a file
 
-![create a file](image/touch.png)
+![create a file](images/touch.png)
 ### 2. Create a File
 
 To create a file:
@@ -24,12 +24,12 @@ To create a file:
 touch script.sh
 ```
 
-![Created note.sh](image/script.png)
-![create not,txt](image/teouch.png)
+![Created note.sh](images/script.png)
+![create not,txt](images/teouch.png)
 
 ### 3. check permision level to file
 
-![view access level](image/latr.png)
+![view access level](images/latr.png)
 Press
 
 `
@@ -39,14 +39,14 @@ ls -latr script.sh
  using
 ` chmod +x script.sh`
 
-![edit acccess level](images/777.png)
+![edit acccess level](imagess/777.png)
 
 
-![heirarchica level management](images/755.png)
+![heirarchica level management](imagess/755.png)
 ### 4. Now check what the permission looks like.
 `ls -latr script.sh`
 
-![view current access level](image/755.png)
+![view current access level](images/755.png)
 
 another example;
  ```
@@ -58,21 +58,21 @@ chmod 755 script.sh
  ```
  chmod 777 note.sh
  ```
-![view current access level](image/777.png)
+![view current access level](images/777.png)
  `ls -latr notes.sh`
  
-![file detail](image/777.png)
+![file detail](images/777.png)
 
 ### 6. Change the ownership of a file wtih respect to  user, group
 
-![file permission](image/adduse.png)
+![file permission](images/adduse.png)
 
 run:
 ```bash
 chown john:developer filename.txt
 ```
 
-![create user](image/adduse.png)
+![create user](images/adduse.png)
 
 
 ### 8. Superuser privileges
@@ -82,9 +82,9 @@ To switch users;
 sudo -i
 
 ```
-![get info](image/-i.png)
+![get info](images/-i.png)
 Input `exit` to leave the shell
-![Screenshot](image/ediit.png)
+![Screenshot](images/ediit.png)
 
 
 ### 9 . Create user
@@ -94,10 +94,10 @@ sudo adduser johndoe
 ```
 
 
-![make a new user](image/useradgrp.png)
+![make a new user](images/useradgrp.png)
 
 ### 10. Grant administrative priviledges for user johndoe
-![highlghted in green](image/johnd.png)
+![highlghted in green](images/johnd.png)
 ```
 sudo usermod -aG sudo johndoe
 
@@ -105,7 +105,7 @@ sudo usermod -aG sudo johndoe
 
 
 ### 11. change password for user johndoe
-![Highlightede in yellow](image/johnd.png)
+![Highlightede in yellow](images/johnd.png)
 ```
 sudo passwd johndoe
 
@@ -113,7 +113,7 @@ sudo passwd johndoe
 
 Log out to login to johndoe:
 use `su johndoe`
-![highlighted in red](image/johnd.png)
+![highlighted in red](images/johnd.png)
 
 ### 12. Creating group and adding users to group
 ```
@@ -121,14 +121,14 @@ sudo groupadd developers
 
 
 ```
-![add user to group](image/addgroup.png)
+![add user to group](images/addgroup.png)
 
 ```
 sudo usermod -aG developers johndoe
 
 ```
 
-![Screenshot](image/adduse.png)
+![Screenshot](images/adduse.png)
 
 ## Verify group users;
 ```
@@ -140,37 +140,37 @@ id johnoe
 sudo userdel bamilola
 ```
 ### 13 Group permission
-![mange permission](image/idjohn.png)
+![mange permission](images/idjohn.png)
 ```
 sudo chown :developers /home/tandemvuu/Document
 ```
-![give permit](image/777.png)
+![give permit](images/777.png)
 ```
 
 
 ```sudo chmod g+rw /home/tandemvuu/Document
 
 ```
- ![give access ](image/groupaccess.png)
+ ![give access ](images/groupaccess.png)
 ## Miscellaneous tasks
 create other users
-![Screenshot](image/addgroup.png) 
+![Screenshot](images/addgroup.png) 
 
 create devop group
-![create a new group](image/addgroup.png)
+![create a new group](images/addgroup.png)
 
 create folders for each users
-![new flder](image/mkdirforuser.png)
+![new flder](images/mkdirforuser.png)
 
 ## add userss to group
-![new grp&users](image/addusergroup.png)
-![Screenshot](image/filepermit.png)
+![new grp&users](images/addusergroup.png)
+![Screenshot](images/filepermit.png)
 
  give access to devop group
- ![add picture](image/gdpir.png)
+ ![add picture](images/gdpir.png)
 
- ![access as asset](image/groupaccess.png)
- ![Screenshot](image/mkdirforuser.png)
+ ![access as asset](images/groupaccess.png)
+ ![Screenshot](images/mkdirforuser.png)
 Refer to the included screenshots for visual guidance on these steps.
 
 ---
