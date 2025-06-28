@@ -25,7 +25,7 @@ touch script.sh
 ```
 
 ![Created note.sh](images/script.png)
-![create not,txt](images/teouch.png)
+![create note.txt](images/teouch.png)
 
 ### 3. check permision level to file
 
@@ -39,10 +39,10 @@ ls -latr script.sh
  using
 ` chmod +x script.sh`
 
-![edit acccess level](imagess/777.png)
+   ![edit acccess level](imagess/777.png)
 
 
-![heirarchica level management](imagess/755.png)
+   ![heirarchica level management](imagess/755.png)
 ### 4. Now check what the permission looks like.
 `ls -latr script.sh`
 
@@ -58,21 +58,21 @@ chmod 755 script.sh
  ```
  chmod 777 note.sh
  ```
-![view current access level](images/777.png)
+   ![view current access level](images/777.png)
  `ls -latr notes.sh`
  
-![file detail](images/777.png)
+   ![file detail](images/777.png)
 
 ### 6. Change the ownership of a file wtih respect to  user, group
 
-![file permission](images/adduse.png)
+   ![file permission](images/adduse.png)
 
 run:
 ```bash
 chown john:developer filename.txt
 ```
 
-![create user](images/adduse.png)
+   ![create user](images/adduse.png)
 
 
 ### 8. Superuser privileges
@@ -82,9 +82,9 @@ To switch users;
 sudo -i
 
 ```
-![get info](images/-i.png)
+  ![get info](images/-i.png)
 Input `exit` to leave the shell
-![Screenshot](images/ediit.png)
+   ![Screenshot](images/ediit.png)
 
 
 ### 9 . Create user
@@ -94,10 +94,10 @@ sudo adduser johndoe
 ```
 
 
-![make a new user](images/useradgrp.png)
+  ![make a new user](images/useradgrp.png)
 
 ### 10. Grant administrative priviledges for user johndoe
-![highlghted in green](images/johnd.png)
+   ![highlghted in green](images/johnd.png)
 ```
 sudo usermod -aG sudo johndoe
 
@@ -105,75 +105,67 @@ sudo usermod -aG sudo johndoe
 
 
 ### 11. change password for user johndoe
-![Highlightede in yellow](images/johnd.png)
+   ![Highlightede in yellow](images/johnd.png)
 ```
 sudo passwd johndoe
-
 ```
 
 Log out to login to johndoe:
 use `su johndoe`
-![highlighted in red](images/johnd.png)
+   ![highlighted in red](images/johnd.png)
 
 ### 12. Creating group and adding users to group
 ```
 sudo groupadd developers
-
-
 ```
-![add user to group](images/addgroup.png)
+   ![add user to group](images/addgroup.png)
 
 ```
 sudo usermod -aG developers johndoe
-
 ```
 
 ![Screenshot](images/adduse.png)
 
-## Verify group users;
+### Verify group users;
 ```
 id johnoe
-
 ```
-##Delete user
+
+### Delete user
+
 ```
 sudo userdel bamilola
 ```
 ### 13 Group permission
-![mange permission](images/idjohn.png)
+   ![mange permission](images/idjohn.png)
 ```
 sudo chown :developers /home/tandemvuu/Document
 ```
-![give permit](images/777.png)
+   ![give permit](images/777.png)
 ```
-
-
 ```sudo chmod g+rw /home/tandemvuu/Document
-
 ```
- ![give access ](images/groupaccess.png)
-## Miscellaneous tasks
+   ![give access ](images/groupaccess.png)
+### Miscellaneous tasks
 create other users
-![Screenshot](images/addgroup.png) 
+   ![Screenshot](images/addgroup.png) 
 
-create devop group
-![create a new group](images/addgroup.png)
+### create devop group
+   ![create a new group](images/addgroup.png)
 
-create folders for each users
-![new flder](images/mkdirforuser.png)
+### create folders for each users
+   ![new flder](images/mkdirforuser.png)
 
-## add userss to group
+### add userss to group
 ![new grp&users](images/addusergroup.png)
 ![Screenshot](images/filepermit.png)
 
  give access to devop group
- ![add picture](images/gdpir.png)
+   ![add picture](images/gdpir.png)
 
  ![access as asset](images/groupaccess.png)
  ![Screenshot](images/mkdirforuser.png)
 Refer to the included screenshots for visual guidance on these steps.
-
----
 
 ## License
 
